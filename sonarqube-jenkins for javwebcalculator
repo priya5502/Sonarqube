@@ -19,6 +19,14 @@ pipeline {
             }
         }
 
+
+
+    stage('Maven package') {
+            steps {
+                sh 'mvn package'
+            }
+        }
+
         stage('CODE ANALYSIS with SONARQUBE') {
           
 		  environment {
