@@ -18,6 +18,11 @@ pipeline {
                 sh 'mvn test'
             }
         }
+ stage('Maven package') {
+            steps {
+                sh 'mvn test'
+            }
+        }
 
         stage('CODE ANALYSIS with SONARQUBE') {
           
